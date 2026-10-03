@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: HireFlowBackend
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/jobportal
+      auto-index-creation: true
+
+  mail:
+    host: smtp-relay.brevo.com
+    port: 587
+    username: b7158c001@smtp-brevo.com
+    password: xsmtpsib-2f986c06ca3ae0705f9a308f514b4e3aa837e2ae6d92bf0b4e45bf9b16a20ba0-9O0s9QZ7S639FI12
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
