@@ -1,0 +1,299 @@
+.post-job-page {
+  min-height: calc(100vh - 70px);
+
+  padding: 50px 24px 80px;
+
+  background: #f8fafc;
+}
+
+.post-job-container {
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.post-job-header {
+  margin-bottom: 30px;
+}
+
+.post-job-label {
+  margin-bottom: 8px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.post-job-header h1 {
+  margin-bottom: 10px;
+
+  color: #111827;
+
+  font-size: 38px;
+}
+
+.post-job-header p:last-child {
+  color: #6b7280;
+
+  font-size: 16px;
+}
+
+
+/* =========================
+   CARD
+   ========================= */
+
+.post-job-card {
+  padding: 35px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================
+   MESSAGES
+   ========================= */
+
+.post-job-error {
+  margin-bottom: 25px;
+
+  padding: 12px 15px;
+
+  background: #fee2e2;
+
+  color: #b91c1c;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+.post-job-success {
+  margin-bottom: 25px;
+
+  padding: 12px 15px;
+
+  background: #dcfce7;
+
+  color: #15803d;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+.post-job-section {
+  padding-bottom: 30px;
+
+  margin-bottom: 30px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.post-job-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.post-job-section h2 {
+  margin-bottom: 22px;
+
+  color: #111827;
+
+  font-size: 21px;
+}
+
+
+/* =========================
+   GRID
+   ========================= */
+
+.post-job-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+.post-job-form-group {
+  margin-bottom: 20px;
+}
+
+.post-job-grid .post-job-form-group {
+  margin-bottom: 0;
+}
+
+.post-job-form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.post-job-form-group input,
+.post-job-form-group select,
+.post-job-form-group textarea {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 7px;
+
+  outline: none;
+
+  background: white;
+
+  color: #111827;
+}
+
+.post-job-form-group textarea {
+  resize: vertical;
+
+  min-height: 100px;
+
+  line-height: 1.5;
+}
+
+.post-job-form-group input:focus,
+.post-job-form-group select:focus,
+.post-job-form-group textarea:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.post-job-form-group small {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #6b7280;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   ACTIONS
+   ========================= */
+
+.post-job-actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  padding-top: 5px;
+}
+
+.cancel-job-btn,
+.submit-job-btn {
+  padding: 11px 22px;
+
+  border-radius: 7px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.cancel-job-btn {
+  border: 1px solid #d1d5db;
+
+  background: white;
+
+  color: #374151;
+}
+
+.cancel-job-btn:hover {
+  background: #f9fafb;
+}
+
+.submit-job-btn {
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+}
+
+.submit-job-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.submit-job-btn:disabled {
+  background: #9ca3af;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 700px) {
+  .post-job-page {
+    padding: 30px 15px 60px;
+  }
+
+  .post-job-card {
+    padding: 25px;
+  }
+
+  .post-job-header h1 {
+    font-size: 30px;
+  }
+
+  .post-job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-job-grid .post-job-form-group {
+    margin-bottom: 20px;
+  }
+
+  .post-job-actions {
+    flex-direction: column-reverse;
+  }
+
+  .cancel-job-btn,
+  .submit-job-btn {
+    width: 100%;
+  }
+}

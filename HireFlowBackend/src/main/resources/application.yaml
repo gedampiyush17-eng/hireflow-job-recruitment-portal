@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: optional:file:./HireFlowBackend/.env.properties
   application:
     name: HireFlowBackend
 
@@ -10,8 +12,8 @@ spring:
   mail:
     host: smtp-relay.brevo.com
     port: 587
-    username: b7158c001@smtp-brevo.com
-    password: xsmtpsib-2f986c06ca3ae0705f9a308f514b4e3aa837e2ae6d92bf0b4e45bf9b16a20ba0-9O0s9QZ7S639FI12
+    username: ${BREVO_USERNAME}
+    password: ${BREVO_PASSWORD}
     properties:
       mail:
         smtp:

@@ -1,0 +1,355 @@
+.applicants-page {
+  min-height: calc(100vh - 72px);
+  padding: 45px 24px;
+  background: #f5f7fb;
+}
+
+.applicants-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.back-to-jobs {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.applicants-header {
+  margin-bottom: 30px;
+}
+
+.applicants-label {
+  margin-bottom: 8px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.applicants-header h1 {
+  margin-bottom: 8px;
+  color: #111827;
+  font-size: 38px;
+}
+
+.applicants-header p {
+  color: #6b7280;
+}
+
+.applicants-error {
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.applicants-success {
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  border: 1px solid #86efac;
+  border-radius: 8px;
+  background: #f0fdf4;
+  color: #15803d;
+  font-weight: 600;
+}
+
+.applicants-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 20px;
+}
+
+.applicant-list {
+  overflow: hidden;
+  height: fit-content;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.applicant-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.applicant-list-header h2 {
+  color: #111827;
+  font-size: 18px;
+}
+
+.applicant-list-header span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 8px;
+  border-radius: 20px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.applicant-list-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 18px;
+  gap: 13px;
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.applicant-list-item:hover {
+  background: #f8fafc;
+}
+
+.applicant-list-item.selected {
+  background: #eff6ff;
+}
+
+.applicant-avatar,
+.large-applicant-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.applicant-avatar {
+  width: 46px;
+  height: 46px;
+}
+
+.large-applicant-avatar {
+  width: 70px;
+  height: 70px;
+  font-size: 28px;
+}
+
+.applicant-list-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.applicant-list-info h3 {
+  overflow: hidden;
+  margin-bottom: 4px;
+  color: #111827;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.applicant-list-info p {
+  overflow: hidden;
+  color: #6b7280;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.application-status {
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.application-status.shortlisted {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.application-status.interviewing {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.application-status.rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.applicant-details {
+  min-height: 450px;
+  padding: 30px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.applicant-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.applicant-profile-header h2 {
+  margin-bottom: 5px;
+  color: #111827;
+  font-size: 25px;
+}
+
+.applicant-profile-header p {
+  color: #6b7280;
+}
+
+.applicant-information {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 25px 0;
+}
+
+.applicant-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.applicant-info-item span {
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.applicant-info-item strong {
+  overflow-wrap: anywhere;
+  color: #374151;
+  font-size: 14px;
+}
+
+.applicant-section {
+  padding: 20px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.applicant-section h3 {
+  margin-bottom: 10px;
+  color: #111827;
+  font-size: 16px;
+}
+
+.applicant-section p {
+  line-height: 1.7;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.applicant-actions {
+  margin-top: 20px;
+  padding-top: 22px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.applicant-actions h3 {
+  margin-bottom: 15px;
+  color: #111827;
+  font-size: 16px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 11px 17px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.action-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.accept-btn {
+  background: #16a34a;
+}
+
+.interview-btn {
+  background: #2563eb;
+}
+
+.reject-btn {
+  background: #dc2626;
+}
+
+.no-applicants,
+.applicants-state {
+  padding: 70px 30px;
+  text-align: center;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.no-applicants-icon {
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+
+.no-applicants h2,
+.applicants-state h2 {
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.no-applicants p,
+.applicants-state p {
+  color: #6b7280;
+}
+
+@media (max-width: 900px) {
+  .applicants-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .applicants-page {
+    padding: 30px 16px;
+  }
+
+  .applicants-header h1 {
+    font-size: 30px;
+  }
+
+  .applicant-information {
+    grid-template-columns: 1fr;
+  }
+
+  .applicant-details {
+    padding: 20px;
+  }
+}

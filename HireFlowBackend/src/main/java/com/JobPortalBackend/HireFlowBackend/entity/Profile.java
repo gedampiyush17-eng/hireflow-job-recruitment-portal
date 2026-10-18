@@ -1,5 +1,7 @@
 package com.JobPortalBackend.HireFlowBackend.entity;
 
+import com.JobPortalBackend.HireFlowBackend.dto.Certification;
+import com.JobPortalBackend.HireFlowBackend.dto.Experience;
 import com.JobPortalBackend.HireFlowBackend.dto.ProfileDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
